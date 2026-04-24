@@ -1,0 +1,34 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Cormorant:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind Layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset + Base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default Font */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #000; /* matches your dark theme */
+  color: #fff;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better Text Rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
