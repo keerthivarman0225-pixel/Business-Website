@@ -11,7 +11,7 @@ const statusStyle = {
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('All')
-  const [hovered, setHovered] = useState(null)
+ 
 
   const projects = projectsData.map((p, i) => ({
     ...p,
@@ -66,9 +66,7 @@ const Projects = () => {
         {filtered.map((project, i) => (
           <div
             key={i}
-            onMouseEnter={() => setHovered(i)}
-            onMouseLeave={() => setHovered(null)}
-            className="group grid grid-cols-1 md:grid-cols-2 bg-[#0e0e0e]"
+             className="group grid grid-cols-1 md:grid-cols-2 bg-[#0e0e0e]"
           >
 
             {/* IMAGE */}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
-  const [focused, setFocused] = useState(null)
+  
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   const inputBase = "w-full bg-transparent border-b border-white/10 py-4 text-sm text-white outline-none transition"
-  const labelBase = "text-xs uppercase mb-2 block tracking-widest"
+ 
 
   const offices = [
     {
